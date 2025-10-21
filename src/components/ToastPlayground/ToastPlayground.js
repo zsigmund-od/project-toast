@@ -20,7 +20,11 @@ function ToastPlayground() {
       </header>
 
       {showToast && (
-        <Toast message={message} onClose={() => setShowToast(false)} />
+        <Toast
+          message={message}
+          variant={variant}
+          onClose={() => setShowToast(false)}
+        />
       )}
 
       <div className={styles.controlsWrapper}>
