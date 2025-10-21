@@ -19,7 +19,9 @@ function ToastPlayground() {
         <h1>Toast Playground</h1>
       </header>
 
-     {showToast && <Toast onClose={() => setShowToast(false)} />}
+      {showToast && (
+        <Toast message={message} onClose={() => setShowToast(false)} />
+      )}
 
       <div className={styles.controlsWrapper}>
         <div className={styles.row}>
